@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Problem: when the content is short the footer won't stay at the bottom... solution using grid -->
+    <div class="container">
+      <div class="content">Page Content</div>
+      <div class="footer">Footer</div>
+    </div>
+    <style>
+      .container {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: auto 200px;
+      }
+
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: yellowgreen;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        color: white;
+      }
+    </style>
+  </body>
+</html>
